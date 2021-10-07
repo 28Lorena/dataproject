@@ -1,0 +1,59 @@
+vec1 <- c(81,82,83,85,79)
+vec2 <- c(82,83,85,86,88)
+vec3 <- c(81,86,87,89,91)
+
+grades <- c(vec1,vec2,vec3)
+
+plot(grades,type = "b",col="green",pch=15)
+
+data <- seq(1:15)
+print(data)
+
+
+###ALT1
+
+my_mat <- matrix(data,nrow=3,ncol=5)
+my_mat
+
+Math <- vec1 <- c(81,82,83,85,79)
+Science <- vec2 <- c(82,83,85,86,88)
+Eng <- vec3 <- c(81,86,87,89,91)
+
+Grades <- comb_mat <- rbind(Math,Science,Eng)
+Grades
+
+matplot(comb_mat, type = "b", pch = 15, col =  1:5)
+
+
+###ALT2
+Name <- c("Rachel","Julie","Jacqui","Sue", "Jayne")
+Age <- c(35, 48, 39, 54, 50)
+Role <- c("B6", "B8", "B8", "B3", "B2")
+LOS <- c(12, 5, 7, 21, 15)
+
+frame <- data.frame(Name,Age, Role, LOS)
+
+###ALT3
+
+x= seq(1:20)
+y= x= seq(1:20^2)
+
+library(ggplot2)
+qplot (x,y, main = "Using QPlot", xlab = "Sequence", ylab = "x Seq^2")
+
+####ALT4
+bp <- c(4.0, 5.45, 6.75, 3.56, 18.30)
+
+barplot(bp)       
+
+grp <- letters[1:5]
+barplot(bp,names.arg = grp)
+
+
+###ALT5
+name <- readline(prompt="Enter your name:")
+Age <- readline(prompt = "Enter your age:")
+
+###ALT6
+S <- seq(20,50)
+sum(S)
